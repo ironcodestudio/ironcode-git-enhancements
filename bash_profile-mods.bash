@@ -21,7 +21,8 @@ if [ -f /usr/local/git/contrib/completion/git-prompt.sh ]; then
     # load prompt script
     . /usr/local/git/contrib/completion/git-prompt.sh
 
-    # ??
+    # Add an * to the branch name if the branch
+    # is dirty (i.e. there are changes since last commit)
     GIT_PS1_SHOWDIRTYSTATE=true
 
     # update prompt to include git status __git_ps1
