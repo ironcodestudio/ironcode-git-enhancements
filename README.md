@@ -20,9 +20,8 @@ Installation
 ------------
 * Copy `/salcode-git-settings` directory to home directory (or clone this repo in your home directory)
 * Add the line `source  ~/salcode-git-settings/bash_profile-mods.bash` to 
-your `.bash_profile` - this can be done with the following lines from the command line
-`echo '# git settings' >> ~/.bash_profile;
-echo 'source  ~/salcode-git-settings/bash_profile-mods.bash' >> ~/.bash_profile`
+your `.bash_profile` - this can be done with the following line from the command line  
+`echo 'source  ~/salcode-git-settings/bash_profile-mods.bash' >> ~/.bash_profile`
 * These changes will be applied after your next restart, you can apply them now with
 the following from the command line
 `source ~/salcode-git-settings/bash_profile-mods.bash`
