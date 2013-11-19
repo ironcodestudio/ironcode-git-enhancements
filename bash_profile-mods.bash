@@ -1,4 +1,3 @@
-echo 'bash_profile-mods.bash';
 # moved /usr/local/git/bin to front of path to use custom git (not Xcode version)
 export PATH=/usr/local/git/bin:$PATH
 
