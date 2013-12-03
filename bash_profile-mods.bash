@@ -28,3 +28,14 @@ if [ -f /usr/local/git/contrib/completion/git-prompt.sh ]; then
     export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
 
 fi
+
+###
+# git aliases
+# http://githowto.com/aliases
+###
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch -a -v' # shows both local and remote branches AND verbose
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
