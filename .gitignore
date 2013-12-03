@@ -1,0 +1,6 @@
+# ingnore files starting with .
+.*
+# do NOT ignore (i.e. include .gitignore)
+!.gitignore
+# ingnore files starting with ~
+~*
