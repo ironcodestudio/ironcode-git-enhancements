@@ -6,8 +6,8 @@ export PATH=/usr/local/git/bin:$PATH
 ###
 
 # if the git-completion.bash script exists, load it
-if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
-    . /usr/local/git/contrib/completion/git-completion.bash
+if [ -f ./git-completion.bash ]; then
+    . ./git-completion.bash
 fi
 
 ###
