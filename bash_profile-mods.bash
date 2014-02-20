@@ -14,10 +14,10 @@ fi
 ###
 
 # if the git-prompt.sh script exists,
-if [ -f /usr/local/git/contrib/completion/git-prompt.sh ]; then
+if [ -f ~/salcode-git-settings/scripts/git-prompt.sh ]; then
 
     # load prompt script
-    . /usr/local/git/contrib/completion/git-prompt.sh
+    . ~/salcode-git-settings/scripts/git-prompt.sh
 
     # Add an * to the branch name if the branch
     # is dirty (i.e. there are changes since last commit)
