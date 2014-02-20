@@ -1,13 +1,12 @@
 # moved /usr/local/git/bin to front of path to use custom git (not Xcode version)
-export PATH=/usr/local/git/bin:$PATH
+export PATH=~/salcode-git-settings/scripts:$PATH
 
 ###
 # ENABLE git tab completion
 ###
 
-# if the git-completion.bash script exists, load it
-if [ -f ./git-completion.bash ]; then
-    . ./git-completion.bash
+if [ -f ~/salcode-git-settings/scripts/git-completion.bash ]; then
+    . ~/salcode-git-settings/scripts/git-completion.bash
 fi
 
 ###
