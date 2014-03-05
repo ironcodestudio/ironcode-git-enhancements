@@ -31,10 +31,12 @@ fi
 ###
 # git aliases
 # http://githowto.com/aliases
+# modified
 ###
 alias gs='git status '
 alias ga='git add '
 alias gb='git branch -a -v' # shows both local and remote branches AND verbose
 alias gc='git commit'
 alias gd='git diff'
+alias gds='git diff --staged'
 alias go='git checkout '
