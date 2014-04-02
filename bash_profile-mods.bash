@@ -1,4 +1,5 @@
-# moved /usr/local/git/bin to front of path to use custom git (not Xcode version)
+# add this directory to your path
+# assumes location and directory name
 export PATH=~/salcode-git-settings/scripts:$PATH
 
 ###
