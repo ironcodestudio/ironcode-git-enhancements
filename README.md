@@ -3,16 +3,11 @@ salcode-git-settings
 
 Requirements
 ------------
-
-This code is based on the version of Git available at [http://git-scm.com/](http://git-scm.com/)  
-**Not** the Xcode version
-[Download Git](http://git-scm.com/downloads)
-
-This code is for my Mac.  Maybe it will work on your setup, as well. No promises.
+* Command line git installed
+* Bash terminal environment
 
 Features
 --------
-* Git path changed to use downloaded non-Xcode version
 * Git tab completion
 * Git status in command prompt
 
