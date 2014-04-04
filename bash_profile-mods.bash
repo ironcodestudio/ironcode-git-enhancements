@@ -1,13 +1,15 @@
+IRONCODE_GIT_SCRIPTS_PATH=~/ironcode-git-enhancements/scripts
+
 # add this directory to your path
 # assumes location and directory name
-export PATH=~/salcode-git-settings/scripts:$PATH
+export PATH=$IRONCODE_GIT_SCRIPTS_PATH:$PATH
 
 ###
 # ENABLE git tab completion
 ###
 
-if [ -f ~/salcode-git-settings/scripts/git-completion.bash ]; then
-    . ~/salcode-git-settings/scripts/git-completion.bash
+if [ -f $IRONCODE_GIT_SCRIPTS_PATH/git-completion.bash ]; then
+    . $IRONCODE_GIT_SCRIPTS_PATH/git-completion.bash
 fi
 
 ###
@@ -15,10 +17,10 @@ fi
 ###
 
 # if the git-prompt.sh script exists,
-if [ -f ~/salcode-git-settings/scripts/git-prompt.sh ]; then
+if [ -f $IRONCODE_GIT_SCRIPTS_PATH/git-prompt.sh ]; then
 
     # load prompt script
-    . ~/salcode-git-settings/scripts/git-prompt.sh
+    . $IRONCODE_GIT_SCRIPTS_PATH/git-prompt.sh
 
     # Add an * to the branch name if the branch
     # is dirty (i.e. there are changes since last commit)
