@@ -14,14 +14,38 @@ Features
 --------
 * Git tab completion
 * Git status in command prompt
+* Git shortcut names
 
 Installation
 ------------
-* Copy `/salcode-git-settings` directory to home directory (or clone this repo in your home directory)
-* From the command line enter `echo 'source  ~/salcode-git-settings/bash_profile-mods.bash' >> ~/.bash_profile`
-* These changes will be applied in all future terminal sessions.
+* Copy `/ironcode-git-enhancements` directory to home directory (or clone this repo in your home directory)
+* From the command line enter `echo 'source  ~/ironcode-git-enhancements/bash_profile-mods.bash' >> ~/.bash_profile`
+
+Installation Notes
+------------------
+* Installation adds `source  ~/ironcode-git-enhancements/bash_profile-mods.bash` to your .bash_profile
+* The scripts will be loaded in all future terminal sessions.
 If you want to apply them in your current terminal session can apply them now with
-the following from the command line `source ~/salcode-git-settings/bash_profile-mods.bash`
+the following from the command line `source ~/ironcode-git-enhancements/bash_profile-mods.bash`
+
+Uninstall
+---------
+Edit your .bash_profile file in your home directory and remove the line
+`source  ~/ironcode-git-enhancements/bash_profile-mods.bash`
+
+Git Shortcuts
+-------------
+```
+alias gs='git status'
+alias ga='git add'
+alias gb='git branch -a -v' # shows both local and remote branches AND verbose
+alias gc='git commit'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias go='git checkout'
+alias gl='git log --pretty=oneline'
+```
+
 
 Included Components
 -------------------
@@ -30,6 +54,7 @@ Included Components
 
 Changelog
 ------------
+20140404 - move to ironcode-git-enhancements, updated paths and documentation
 20140404 - added `gl` comand line shortcut for `git log --pretty=oneline`
 20140402 - updated incorrect comments and clarified installation  
 20140219 - moved required scripts git-completion.bash and git-prompt.sh into this repo
