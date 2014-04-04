@@ -26,5 +26,6 @@ the following from the command line `source ~/salcode-git-settings/bash_profile-
 
 Changelog
 ------------
+20140404 - added `gl` comand line shortcut for `git log --pretty=oneline`
 20140402 - updated incorrect comments and clarified installation  
 20140219 - moved required scripts git-completion.bash and git-prompt.sh into this repo
