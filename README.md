@@ -1,5 +1,9 @@
-salcode-git-settings
-====================
+ironcode-git-enhancements
+=========================
+
+License
+-------
+GNU General Public License, version 2.0
 
 Requirements
 ------------
@@ -18,6 +22,11 @@ Installation
 * These changes will be applied in all future terminal sessions.
 If you want to apply them in your current terminal session can apply them now with
 the following from the command line `source ~/salcode-git-settings/bash_profile-mods.bash`
+
+Included Components
+-------------------
+* bash/zsh completion support for core Git by Shawn O. Pearce <spearce@spearce.org>
+* bash/zsh git prompt support Shawn O. Pearce <spearce@spearce.org>
 
 Changelog
 ------------
