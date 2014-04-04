@@ -1,4 +1,4 @@
-ironcode-git-enhancements
+Ironcode Git Enhancements
 =========================
 
 License
@@ -46,7 +46,6 @@ alias go='git checkout'
 alias gl='git log --pretty=oneline'
 ```
 
-
 Included Components
 -------------------
 * bash/zsh completion support for core Git by Shawn O. Pearce <spearce@spearce.org>
@@ -54,7 +53,7 @@ Included Components
 
 Changelog
 ------------
-20140404 - move to ironcode-git-enhancements, updated paths and documentation
-20140404 - added `gl` comand line shortcut for `git log --pretty=oneline`
-20140402 - updated incorrect comments and clarified installation  
-20140219 - moved required scripts git-completion.bash and git-prompt.sh into this repo
+* 20140404 - move to ironcode-git-enhancements, updated paths and documentation
+* 20140404 - added `gl` comand line shortcut for `git log --pretty=oneline`
+* 20140402 - updated incorrect comments and clarified installation  
+* 20140219 - moved required scripts git-completion.bash and git-prompt.sh into this repo
