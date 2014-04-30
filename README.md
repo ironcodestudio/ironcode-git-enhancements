@@ -46,6 +46,24 @@ alias go='git checkout'
 alias gl='git log --pretty=oneline'
 ```
 
+Reference for Other Git Commands
+--------------------------------
+### Set an upstream remote
+`git remote add upstream https://github.com/ironcodestudio/ironcode-git-enhancements.git`
+### Fetch and merge upstream changes
+`git fetch upstream`
+`git merge upstream/master`
+
+### Push Local Branch to Remote
+`git push origin example-branch-name`
+
+### Add Submodule
+`git submodule add https://github.com/salcode/example.git`
+
+### Update Submodules on a Cloned Project
+git submodule update --init --recursive
+
+
 Included Components
 -------------------
 * bash/zsh completion support for core Git by Shawn O. Pearce <spearce@spearce.org>
