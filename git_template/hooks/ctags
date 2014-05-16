@@ -1,0 +1,20 @@
+#!/bin/sh
+set -e
+# based on Tim Pope's Effortless Ctags
+# http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html
+
+# update path to look for /usr/local/bin/ first, this is
+# the location of exuberant ctags (rather than default OS X ctags)
+PATH="/usr/local/bin:$PATH"
+
+trap "rm -f .git/tags.$$" EXIT
+ctags --tag-relative -Rf.git/tags.$$ --exclude=.git --languages=-javascript,sql
+# generate ctags
+	# use relative paths
+	# recurse through directories
+	# force the output file to write to .git/tag.$$ (where $$ is the PID to make filename "unique")
+	# exclude 'node_modules' directory is used for nodejs functionality (like grunt), no need for ctags
+	# exclude '.git' directory. VERY important, otherwise tags file will be huge (~12GB) and too slow to use
+	# exclude languages javascript and sql, this can be added back in on a per project basis
+ctags --tag-relative -Rf.git/tags.$$ --exclude=node_modules --exclude=.git --languages=-javascript,sql
+mv .git/tags.$$ .git/tags
