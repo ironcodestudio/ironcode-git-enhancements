@@ -50,6 +50,7 @@ Reference for Other Git Commands
 --------------------------------
 ### Set an upstream remote
 `git remote add upstream https://github.com/ironcodestudio/ironcode-git-enhancements.git`
+
 ### Fetch and merge upstream changes
 `git fetch upstream`
 `git merge upstream/master`
@@ -61,7 +62,7 @@ Reference for Other Git Commands
 `git submodule add https://github.com/salcode/example.git`
 
 ### Update Submodules on a Cloned Project
-git submodule update --init --recursive
+`git submodule update --init --recursive`
 
 
 Included Components
