@@ -37,6 +37,7 @@ fi
 # modified
 ###
 alias gs='git status'
+alias gsi='git status --ignored'
 alias ga='git add'
 alias gb='git branch -a -v' # shows both local and remote branches AND verbose
 alias gbo='git checkout -b' # creates new branch and checks it out, in one command
