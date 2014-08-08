@@ -68,9 +68,6 @@ __git_shortcut  ga    add
 alias gb='git branch -a -v' # shows both local and remote branches AND verbose
 __git_shortcut  gb    branch -a -v
 
-alias gbo='git checkout -b' # creates new branch and checks it out, in one command
-__git_shortcut  gbo   checkout -b
-
 alias gc='git commit'
 __git_shortcut  gc    commit
 
