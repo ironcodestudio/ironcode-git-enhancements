@@ -31,7 +31,8 @@ Git Shortcuts
 alias gs='git status'
 alias gsi='git status --ignored'
 alias ga='git add'
-alias gb='git branch -a -v' # shows both local and remote branches AND verbose
+alias gb='git branch'
+alias gbv='git branch -a -v' # shows both local and remote branches AND verbose
 alias gc='git commit'
 alias gd='git diff'
 alias gds='git diff --staged'
@@ -97,7 +98,9 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
-* 20140808 - add alias 'gsi'
+* 20140808 - add alias 'gsi', add tab completion on aliases, remove 'gbo',
+change 'gb' to map to 'git branch' with no parameters, add 'gbv', update
+git-completion.bash to latest version
 * 20140516 - add `git_template` directory and hooks for Effortless Ctags
 * 20140404 - move to ironcode-git-enhancements, updated paths and documentation
 * 20140404 - added `gl` comand line shortcut for `git log --pretty=oneline`
