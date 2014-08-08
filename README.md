@@ -60,7 +60,7 @@ Included Components
 -------------------
 * bash/zsh completion support for core Git by Shawn O. Pearce <spearce@spearce.org>
 * bash/zsh git prompt support by Shawn O. Pearce <spearce@spearce.org>
-* Effortless Ctags git hooks by Tim Pope 
+* Effortless Ctags git hooks by Tim Pope
 
 Git project template
 --------------------
@@ -69,10 +69,10 @@ The sub-directory `git_template` acts as a template when creating or cloning a r
 Exuberant Ctags*
 --------------------------------------------------------------
 This is an optional feature for advanced users who want to use
-[Exuberant Ctags](http://ctags.sourceforge.net/).  If your editor/IDE uses ctags for 
+[Exuberant Ctags](http://ctags.sourceforge.net/).  If your editor/IDE uses ctags for
 integration across files in a project, this will regenerate ctags after commits, merges, and checkouts.
 Users who are not interested in these features can ignore this section.
-The scripting in these hooks fails silently if 
+The scripting in these hooks fails silently if
 Exuberant Ctags is not installed.
 This is based on Tim Pope's work [Effortless Ctags with Git](http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html)
 
