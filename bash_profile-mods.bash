@@ -9,7 +9,7 @@ export PATH=$IRONCODE_GIT_SCRIPTS_PATH:$PATH
 ###
 
 if [ -f $IRONCODE_GIT_SCRIPTS_PATH/git-completion.bash ]; then
-    . $IRONCODE_GIT_SCRIPTS_PATH/git-completion.bash
+	. $IRONCODE_GIT_SCRIPTS_PATH/git-completion.bash
 fi
 
 ###
@@ -19,15 +19,15 @@ fi
 # if the git-prompt.sh script exists,
 if [ -f $IRONCODE_GIT_SCRIPTS_PATH/git-prompt.sh ]; then
 
-    # load prompt script
-    . $IRONCODE_GIT_SCRIPTS_PATH/git-prompt.sh
+	# load prompt script
+	. $IRONCODE_GIT_SCRIPTS_PATH/git-prompt.sh
 
-    # Add an * to the branch name if the branch
-    # is dirty (i.e. there are changes since last commit)
-    GIT_PS1_SHOWDIRTYSTATE=true
+	# Add an * to the branch name if the branch
+	# is dirty (i.e. there are changes since last commit)
+	GIT_PS1_SHOWDIRTYSTATE=true
 
-    # update prompt to include git status __git_ps1
-    export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
+	# update prompt to include git status __git_ps1
+	export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
 
 fi
 ###
@@ -35,18 +35,18 @@ fi
 # http://git.661346.n2.nabble.com/Bash-tab-completion-for-git-fetch-alias-is-broken-on-Git-1-7-7-1-td6980366.html#message6988430
 ###
 __define_git_completion () {
-    eval "
-        _git_$2_shortcut () {
-            COMP_LINE=\"git $2\${COMP_LINE#$1}\"
-            let COMP_POINT+=$((4+${#2}-${#1}))
-            COMP_WORDS=(git $2 \"\${COMP_WORDS[@]:1}\")
-            let COMP_CWORD+=1
+	eval "
+		_git_$2_shortcut () {
+			COMP_LINE=\"git $2\${COMP_LINE#$1}\"
+			let COMP_POINT+=$((4+${#2}-${#1}))
+			COMP_WORDS=(git $2 \"\${COMP_WORDS[@]:1}\")
+			let COMP_CWORD+=1
 
-            local cur words cword prev
-            _get_comp_words_by_ref -n =: cur words cword prev
-            _git_$2
-        }
-    "
+			local cur words cword prev
+			_get_comp_words_by_ref -n =: cur words cword prev
+			_git_$2
+		}
+	"
 }
 
 __git_shortcut () {
