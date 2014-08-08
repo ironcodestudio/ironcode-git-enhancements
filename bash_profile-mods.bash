@@ -30,19 +30,58 @@ if [ -f $IRONCODE_GIT_SCRIPTS_PATH/git-prompt.sh ]; then
     export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
 
 fi
+###
+# Helper functions for git completion of aliases
+# http://git.661346.n2.nabble.com/Bash-tab-completion-for-git-fetch-alias-is-broken-on-Git-1-7-7-1-td6980366.html#message6988430
+###
+__define_git_completion () {
+    eval "
+        _git_$2_shortcut () {
+            COMP_LINE=\"git $2\${COMP_LINE#$1}\"
+            let COMP_POINT+=$((4+${#2}-${#1}))
+            COMP_WORDS=(git $2 \"\${COMP_WORDS[@]:1}\")
+            let COMP_CWORD+=1
+
+            local cur words cword prev
+            _get_comp_words_by_ref -n =: cur words cword prev
+            _git_$2
+        }
+    "
+}
+
+__git_shortcut () {
+	type _git_$2_shortcut &>/dev/null || __define_git_completion $1 $2
+	alias $1="git $2 $3"
+	complete -o default -o nospace -F _git_$2_shortcut $1
+}
 
 ###
 # git aliases
-# http://githowto.com/aliases
-# modified
+# http://githowto.com/aliases modified
 ###
 alias gs='git status'
 alias gsi='git status --ignored'
+
 alias ga='git add'
+__git_shortcut  ga    add
+
 alias gb='git branch -a -v' # shows both local and remote branches AND verbose
+__git_shortcut  gb    branch -a -v
+
 alias gbo='git checkout -b' # creates new branch and checks it out, in one command
+__git_shortcut  gbo   checkout -b
+
 alias gc='git commit'
+__git_shortcut  gc    commit
+
 alias gd='git diff'
+__git_shortcut  gd    diff
+
 alias gds='git diff --staged'
+__git_shortcut  gds   diff --staged
+
 alias go='git checkout'
+__git_shortcut  go    checkout
+
 alias gl='git log --pretty=oneline'
+__git_shortcut  gl    log --pretty=oneline
