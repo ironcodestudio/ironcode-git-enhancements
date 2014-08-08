@@ -83,7 +83,7 @@ Installation Notes
 If you want to apply them in your current terminal session can apply them now with
 the following from the command line `source ~/ironcode-git-enhancements/bash_profile-mods.bash`
 * Installation modifies your `~/.gitconfig` to use the included template directory  
-when initializing or cloniong a repository
+when initializing or cloning a repository
 
 Uninstall
 ---------
