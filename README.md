@@ -37,7 +37,7 @@ alias gc='git commit'
 alias gd='git diff'
 alias gds='git diff --staged'
 alias go='git checkout'
-alias gl='git log --pretty=oneline'
+alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 ```
 
 Reference for Other Git Commands
