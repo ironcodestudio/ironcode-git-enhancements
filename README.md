@@ -58,6 +58,19 @@ Reference for Other Git Commands
 ### Update Submodules on a Cloned Project
 `git submodule update --init --recursive`
 
+### Undo Last Commit
+`git reset HEAD~1`  
+More details at http://salferrarello.com/undo-git-commit/
+
+### Remove Untracked Files from Branch
+`git clean -f`  
+use `git clean --dry-run -f` to preview  
+More details in this [Stack Overflow Answer](http://stackoverflow.com/questions/61212/remove-local-untracked-files-from-my-current-git-branch#answer-64966)
+
+### Reset master to origin/master
+`git reset --hard origin/master`  
+__Warning__ This is a destructive change, you will lose any local changes on this branch.
+
 Included Components
 -------------------
 * bash/zsh completion support for core Git by Shawn O. Pearce <spearce@spearce.org>
