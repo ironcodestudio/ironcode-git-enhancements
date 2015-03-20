@@ -69,7 +69,7 @@ alias gb='git branch'
 __git_shortcut  gb    branch
 
 alias gbv='git branch -a -v' # shows both local and remote branches AND verbose
-__git_shortcut  gbv   branch -a -v
+__git_shortcut  gbv   branch "-a -v"
 
 alias gc='git commit'
 __git_shortcut  gc    commit
