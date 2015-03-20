@@ -57,31 +57,23 @@ __git_shortcut () {
 
 ###
 # git aliases
-# http://githowto.com/aliases modified
 ###
-alias gs='git status'
-alias gsi='git status --ignored'
+__git_shortcut  gs    status
 
-alias ga='git add'
+__git_shortcut  gsi   status "--ignored"
+
 __git_shortcut  ga    add
 
-alias gb='git branch'
 __git_shortcut  gb    branch
 
-alias gbv='git branch -a -v' # shows both local and remote branches AND verbose
 __git_shortcut  gbv   branch "-a -v"
 
-alias gc='git commit'
 __git_shortcut  gc    commit
 
-alias gd='git diff'
 __git_shortcut  gd    diff
 
-alias gds='git diff --staged'
 __git_shortcut  gds   diff --staged
 
-alias go='git checkout'
 __git_shortcut  go    checkout
 
-alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 __git_shortcut gl     log "--color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
