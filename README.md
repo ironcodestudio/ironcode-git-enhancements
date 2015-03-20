@@ -22,8 +22,14 @@ Features
 
 Installation
 ------------
-* Clone this repo to your home directory `git clone https://github.com/ironcodestudio/ironcode-git-enhancements ~/ironcode-git-enhancements`
-* From the command line enter `echo 'source  ~/ironcode-git-enhancements/bash_profile-mods.bash' >> ~/.bash_profile;git config --global init.templatedir '~/ironcode-git-enhancements/git_template'`
+Clone this repo to your home directory
+```
+git clone https://github.com/ironcodestudio/ironcode-git-enhancements ~/ironcode-git-enhancements`
+```
+From the command line enter
+```
+echo 'source  ~/ironcode-git-enhancements/bash_profile-mods.bash' >> ~/.bash_profile;git config --global init.templatedir '~/ironcode-git-enhancements/git_template'
+```
 
 Git Shortcuts
 -------------
@@ -46,8 +52,10 @@ Reference for Other Git Commands
 `git remote add upstream https://github.com/ironcodestudio/ironcode-git-enhancements.git`
 
 ### Fetch and merge upstream changes
-`git fetch upstream`
-`git merge upstream/master`
+```
+git fetch upstream
+git merge upstream/master
+```
 
 ### Push Local Branch to Remote
 `git push origin example-branch-name`
@@ -96,8 +104,9 @@ Installation Notes
 * Installation adds `source  ~/ironcode-git-enhancements/bash_profile-mods.bash` to your .bash_profile
 * The scripts will be loaded in all future terminal sessions.
 If you want to apply them in your current terminal session can apply them now with
-the following from the command line `source ~/ironcode-git-enhancements/bash_profile-mods.bash`
-* Installation modifies your `~/.gitconfig` to use the included template directory  
+the following from the command line  
+`source ~/ironcode-git-enhancements/bash_profile-mods.bash`
+* Installation modifies your `~/.gitconfig` to use the included template directory
 when initializing or cloning a repository
 
 Uninstall
@@ -106,16 +115,20 @@ Uninstall
 `source  ~/ironcode-git-enhancements/bash_profile-mods.bash`
 * Edit `~/gitconfig` in your home directory and remove the line  
 `templatedir = ~/ironcode-git-enhancements/git_template`
-* At this point, the modifications are uninstalled and optionally  
+* At this point, the modifications are uninstalled and optionally
 you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
-* 20140808 - add alias 'gsi', add tab completion on aliases, remove 'gbo',
-change 'gb' to map to 'git branch' with no parameters, add 'gbv', update
+* 20150320 - improve readability of output for `gl` alias
+* 20150320 - correct behavior of `gbv` (previously -v paramter was ignored)
+* 20150320 - add new entries in "Reference for Other Git Commands":
+_Undo Last Commit_, _Remove Untracked Files from Branch_, and _Reset master to origin/master_
+* 20140808 - add alias `gsi`, add tab completion on aliases, remove `gbo`,
+change `gb` to map to `git branch` with no parameters, add `gbv`, update
 git-completion.bash to latest version
 * 20140516 - add `git_template` directory and hooks for Effortless Ctags
 * 20140404 - move to ironcode-git-enhancements, updated paths and documentation
 * 20140404 - added `gl` comand line shortcut for `git log --pretty=oneline`
-* 20140402 - updated incorrect comments and clarified installation  
+* 20140402 - updated incorrect comments and clarified installation
 * 20140219 - moved required scripts git-completion.bash and git-prompt.sh into this repo
