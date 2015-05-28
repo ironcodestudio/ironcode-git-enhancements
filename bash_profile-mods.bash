@@ -70,6 +70,8 @@ __git_shortcut  gbv   branch "-a -v"
 
 __git_shortcut  gc    commit
 
+__git_shortcut  gca   commit --amend
+
 __git_shortcut  gd    diff
 
 __git_shortcut  gds   diff --staged
