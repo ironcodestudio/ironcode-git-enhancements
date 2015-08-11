@@ -44,6 +44,9 @@ alias gd='git diff'
 alias gds='git diff --staged'
 alias go='git checkout'
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# gpr 96, will fetch PR 96 create branch pull-request-96
+gpr () { git fetch origin pull/$1/head:pull-request-$1; }
 ```
 
 Reference for Other Git Commands

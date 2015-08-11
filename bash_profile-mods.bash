@@ -80,3 +80,5 @@ __git_shortcut  go    checkout
 
 __git_shortcut  gl    log "--color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
+# gpr 96, will fetch PR 96 create branch pull-request-96
+gpr () { git fetch origin pull/$1/head:pull-request-$1; }
