@@ -24,7 +24,7 @@ Installation
 ------------
 Clone this repo to your home directory
 ```
-git clone https://github.com/ironcodestudio/ironcode-git-enhancements ~/ironcode-git-enhancements`
+git clone https://github.com/ironcodestudio/ironcode-git-enhancements ~/ironcode-git-enhancements
 ```
 From the command line enter
 ```
