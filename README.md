@@ -34,17 +34,17 @@ echo 'source  ~/ironcode-git-enhancements/bash_profile-mods.bash' >> ~/.bash_pro
 Git Shortcuts
 -------------
 ```
-alias gs='git status'
-alias gsi='git status --ignored'
-alias ga='git add'
-alias gb='git branch'
-alias gbv='git branch -a -v' # shows both local and remote branches AND verbose
-alias gc='git commit'
-alias gd='git diff'
-alias gds='git diff --staged'
-alias gdno='git diff --name-only'
-alias go='git checkout'
-alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gs   = 'git status'
+alias gsi  = 'git status --ignored'
+alias ga   = 'git add'
+alias gb   = 'git branch'
+alias gbv  = 'git branch -a -v' # shows both local and remote branches AND verbose
+alias gc   = 'git commit'
+alias gd   = 'git diff'
+alias gds  = 'git diff --staged'
+alias gdno = 'git diff --name-only'
+alias go   = 'git checkout'
+alias gl   = "git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # gpr 96, will fetch PR 96 create branch pull-request-96
 gpr () { git fetch origin pull/$1/head:pull-request-$1; }
