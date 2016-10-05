@@ -124,6 +124,7 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
+* 20161005 - Modify `gpr` to checkout the Pull Request branch after it is pulled locally
 * 20161005 - add shortcut `gdno` for `git diff --name-only`
 * 20150320 - improve readability of output for `gl` alias
 * 20150320 - correct behavior of `gbv` (previously -v paramter was ignored)
