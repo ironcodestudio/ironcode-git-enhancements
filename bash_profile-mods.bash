@@ -76,6 +76,8 @@ __git_shortcut  gd    diff
 
 __git_shortcut  gds   diff --staged
 
+__git_shortcut  gdno  diff --name-only
+
 __git_shortcut  go    checkout
 
 __git_shortcut  gl    log "--color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"

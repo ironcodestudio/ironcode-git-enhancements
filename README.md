@@ -42,6 +42,7 @@ alias gbv='git branch -a -v' # shows both local and remote branches AND verbose
 alias gc='git commit'
 alias gd='git diff'
 alias gds='git diff --staged'
+alias gdno='git diff --name-only'
 alias go='git checkout'
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
@@ -123,6 +124,7 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
+* 20161005 - add shortcut `gdno` for `git diff --name-only`
 * 20150320 - improve readability of output for `gl` alias
 * 20150320 - correct behavior of `gbv` (previously -v paramter was ignored)
 * 20150320 - add new entries in "Reference for Other Git Commands":
