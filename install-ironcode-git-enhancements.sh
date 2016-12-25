@@ -8,5 +8,5 @@ git clone https://github.com/ironcodestudio/ironcode-git-enhancements.git ~/iron
 # Add line to ~/.bash_profile to load our Git modifications
 printf 'source  ~/ironcode-git-enhancements/bash_profile-mods.bash' >> ~/.bash_profile;
 
-# Add line to ~/.gitconfig to load our Git template
-git config --global init.templatedir '~/ironcode-git-enhancements/git_template'
+# Add line to ~/.gitconfig to load our gitconfig settings
+printf "\n[include]\n\tpath = ~/ironcode-git-enhancements/gitconfig" >> ~/.gitconfig
