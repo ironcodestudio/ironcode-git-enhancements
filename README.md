@@ -20,15 +20,36 @@ Features
 * Git project template
 * Prepopulate Git hooks for [Exuberant Ctags](http://ctags.sourceforge.net/)
 
-Installation
-------------
-Clone this repo to your home directory
+Lazy Installation
+-----------------
+
+From the command line run
+
+```
+bash <(curl "
+https://raw.githubusercontent.com/ironcodestudio/ironcode-git-enhancements/develop/
+install-ironcode-git-enhancements.sh")
+```
+
+Detailed Installation
+---------------------
+
+1. Clone this repo to your home directory
+
 ```
 git clone https://github.com/ironcodestudio/ironcode-git-enhancements ~/ironcode-git-enhancements
 ```
-From the command line enter
+
+2. Add line to ~/.bash_profile to load our Git modifications
+
 ```
-echo 'source  ~/ironcode-git-enhancements/bash_profile-mods.bash' >> ~/.bash_profile;git config --global init.templatedir '~/ironcode-git-enhancements/git_template'
+printf 'source  ~/ironcode-git-enhancements/bash_profile-mods.bash' >> ~/.bash_profile;
+```
+
+3. Add line to ~/.gitconfig to load our Git template
+
+```
+git config --global init.templatedir '~/ironcode-git-enhancements/git_template'
 ```
 
 Git Shortcuts
