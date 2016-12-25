@@ -65,6 +65,10 @@ alias gdno = 'git diff --name-only'
 alias go   = 'git checkout'
 alias gl   = "git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
+git branch-clean = Remove both:
+	- any branches already merged into current branch
+	- any branch with a remote that has been removed from origin
+
 # gpr 96, will fetch PR 96 create branch pull-request-96
 gpr () { git fetch origin pull/$1/head:pull-request-$1; }
 ```
