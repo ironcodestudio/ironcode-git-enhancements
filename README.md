@@ -26,9 +26,7 @@ Lazy Installation
 From the command line run
 
 ```
-bash <(curl "
-https://raw.githubusercontent.com/ironcodestudio/ironcode-git-enhancements/develop/
-install-ironcode-git-enhancements.sh")
+bash <(curl "https://raw.githubusercontent.com/ironcodestudio/ironcode-git-enhancements/develop/install-ironcode-git-enhancements.sh")
 ```
 
 Detailed Installation
