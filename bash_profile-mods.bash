@@ -68,9 +68,9 @@ __git_shortcut  gb    branch
 
 __git_shortcut  gbv   branch "-a -v"
 
-__git_shortcut  gc    commit
+__git_shortcut  gc    commit --verbose
 
-__git_shortcut  gca   commit --amend
+__git_shortcut  gca   commit --amend --verbose
 
 __git_shortcut  gd    diff
 

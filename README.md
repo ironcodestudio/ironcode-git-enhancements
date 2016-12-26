@@ -58,7 +58,7 @@ alias gsi  = 'git status --ignored'
 alias ga   = 'git add'
 alias gb   = 'git branch'
 alias gbv  = 'git branch -a -v' # shows both local and remote branches AND verbose
-alias gc   = 'git commit'
+alias gc   = 'git commit --verbose'
 alias gd   = 'git diff'
 alias gds  = 'git diff --staged'
 alias gdno = 'git diff --name-only'
@@ -147,7 +147,8 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
-* 20161225 - Add git branch-clean custom command
+* 20161225 - Add --verbose to `gc` command
+*          - Add git branch-clean custom command
 *          - Add gitconfig to repo
 *          - Add install script (#31)
 *          - Modify command line prompt to use light instead of dark blue for f.lux readability (#29)
