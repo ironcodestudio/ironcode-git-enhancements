@@ -5,3 +5,8 @@
 	# Remove any branches already merged into the current branch.
 	# Removes any branches that have a remote that has been removed from origin.
 	branch-clean = !git branch --merged | grep -v '*' | xargs git branch -d && git remote prune origin
+
+[push]
+	# push tags missing from remote
+	# See https://git-scm.com/docs/git-push#git-push---follow-tags
+	followTags = true

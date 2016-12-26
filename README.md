@@ -147,7 +147,8 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
-* 20161225 - Add --verbose to `gc` command
+* 20161225 - Set git push to always push tags (#24)
+*          - Add --verbose to `gc` command
 *          - Add git branch-clean custom command
 *          - Add gitconfig to repo
 *          - Add install script (#31)
