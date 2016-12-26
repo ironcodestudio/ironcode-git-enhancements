@@ -148,15 +148,15 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 Changelog
 ------------
 * 20161225 - Set git push to always push tags (#24)
-*          - Add --verbose to `gc` command
-*          - Add git branch-clean custom command
-*          - Add gitconfig to repo
+*          - Add --verbose to `gc` command (#22)
+*          - Add git branch-clean custom command (#27)
+*          - Add gitconfig to repo (#30)
 *          - Add install script (#31)
 *          - Modify command line prompt to use light instead of dark blue for f.lux readability (#29)
-* 20161005 - Modify `gpr` to checkout the Pull Request branch after it is pulled locally
-* 20161005 - add shortcut `gdno` for `git diff --name-only`
-* 20150320 - improve readability of output for `gl` alias
-* 20150320 - correct behavior of `gbv` (previously -v paramter was ignored)
+* 20161005 - Modify `gpr` to checkout the Pull Request branch after it is pulled locally (#26)
+* 20161005 - add shortcut `gdno` for `git diff --name-only` (#23)
+* 20150320 - improve readability of output for `gl` alias (#4)
+* 20150320 - correct behavior of `gbv` (previously -v paramter was ignored) (#5)
 * 20150320 - add new entries in "Reference for Other Git Commands":
 _Undo Last Commit_, _Remove Untracked Files from Branch_, and _Reset master to origin/master_
 * 20140808 - add alias `gsi`, add tab completion on aliases, remove `gbo`,
