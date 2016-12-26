@@ -58,9 +58,9 @@ __git_shortcut () {
 ###
 # git aliases
 ###
-__git_shortcut  gs    status
+__git_shortcut  gs    status "--short"
 
-__git_shortcut  gsi   status "--ignored"
+__git_shortcut  gsi   status "--ignored --short"
 
 __git_shortcut  ga    add
 
