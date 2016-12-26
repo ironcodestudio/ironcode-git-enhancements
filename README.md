@@ -147,6 +147,7 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
+* 20161226 - Set git push default to `current` (#36)
 * 20161225 - Set git push to always push tags (#24)
 *          - Add --verbose to `gc` command (#22)
 *          - Add git branch-clean custom command (#27)

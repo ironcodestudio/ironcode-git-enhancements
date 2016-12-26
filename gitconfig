@@ -7,6 +7,10 @@
 	branch-clean = !git branch --merged | grep -v '*' | xargs git branch -d && git remote prune origin
 
 [push]
+	# push only the current branch to the remote (and create the branch
+	# on the remote if it does not already exist there)
+	default = current
+
 	# push tags missing from remote
 	# See https://git-scm.com/docs/git-push#git-push---follow-tags
 	followTags = true
