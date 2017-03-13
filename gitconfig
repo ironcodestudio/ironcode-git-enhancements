@@ -6,6 +6,8 @@
 	# Removes any branches that have a remote that has been removed from origin.
 	branch-clean = !git branch --merged | grep -v '*' | xargs git branch -d && git remote prune origin
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	cfixup  = commit --fixup
+	csquash = commit --squash
 
 [push]
 	# push only the current branch to the remote (and create the branch
