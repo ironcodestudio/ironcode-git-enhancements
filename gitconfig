@@ -17,3 +17,6 @@
 	# push tags missing from remote
 	# See https://git-scm.com/docs/git-push#git-push---follow-tags
 	followTags = true
+
+[rebase]
+	autosquash = true
