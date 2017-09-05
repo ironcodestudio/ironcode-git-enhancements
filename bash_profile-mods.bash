@@ -55,6 +55,11 @@ __git_shortcut () {
 	complete -o default -o nospace -F _git_$2_shortcut $1
 }
 
+## Add tab completion for git move <branch>.
+function _git_move() {
+  _git_branch
+}
+
 ###
 # git aliases
 ###

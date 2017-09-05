@@ -31,14 +31,19 @@
 	# Move to the given branch the last n commits.
 	# @param string $1 The destination branch (create if does not exist).
 	# @param int    $2 The number of commits to move. Defaults to 1.
-	move = "!sh -c 'if [ `git rev-parse --verify --quiet "'$1'"` ];  \
-		then                                                         \
-			git checkout "'$1'";                                     \
-			git cherry-pick-last-n-from-last-branch "'${2:-1}'";     \
-			git reset-hard-other-branch @{-1} HEAD~"'${2:-1}'";      \
-		else                                                         \
-			git checkout -b "'$1'";                                  \
-			git reset-hard-other-branch @{-1} HEAD~"'${2:-1}'";      \
+	move = "!sh -c 'if [ -z "'$1'" ];                                    \
+		then                                                             \
+			echo "No destination branch supplied";                       \
+		else                                                             \
+			if [ `git rev-parse --verify --quiet "'$1'"` ];              \
+				then                                                     \
+					git checkout "'$1'";                                 \
+					git cherry-pick-last-n-from-last-branch "'${2:-1}'"; \
+					git reset-hard-other-branch @{-1} HEAD~"'${2:-1}'";  \
+				else                                                     \
+					git checkout -b "'$1'";                              \
+					git reset-hard-other-branch @{-1} HEAD~"'${2:-1}'";  \
+			fi                                                           \
 		fi'";
 
 [push]

@@ -69,6 +69,11 @@ git branch-clean = Remove both:
 	- any branches already merged into current branch
 	- any branch with a remote that has been removed from origin
 
+git move <branchname> [<number of commits>]
+	= Move the most recent commit(s) to the branch "branchname"
+		- if "branchname" does not exist create it
+		- "number of commits" we are moving is optional and defaults to 1
+
 # gpr 96, will fetch PR 96 create branch pull-request-96
 gpr () { git fetch origin pull/$1/head:pull-request-$1; }
 ```
@@ -147,6 +152,7 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
+* 20170929 - Add git move to move the most recent commit(s) to another branch (#52)
 * 20161226 - Set git push default to `current` (#36)
 * 20161225 - Set git push to always push tags (#24)
 *          - Add --verbose to `gc` command (#22)
