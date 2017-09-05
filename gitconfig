@@ -10,6 +10,37 @@
 	cfixup  = commit --fixup
 	csquash = commit --squash
 
+	# Perform reset --hard on the specified branch
+	# This allows us to remove the last n commits on a branch.
+	# @param string $1 The branch where reset --hard should be applied.
+	# @param string $2 The commit to be used as the new HEAD. Defaults to 'HEAD~1'.
+	# e.g. git reset-hard-other-branch develop HEAD~3
+	# performs git reset --hard HEAD~3 on branch `develop`.
+	reset-hard-other-branch = "!f() { \
+		git checkout $1;              \
+		git reset --hard ${2:-HEAD~1}; \
+		git checkout @{-1};           \
+	}; f"
+
+	# Cherry-pick the last n commits from the last used branch ( @{-1} ).
+	# @param int $1 The number of commits to cherry-pick. Defaults to 1.
+	cherry-pick-last-n-from-last-branch = "!f() { \
+		git cherry-pick @{-1}~${1:-1}...@{-1}~0;   \
+	}; f"
+
+	# Move to the given branch the last n commits.
+	# @param string $1 The destination branch (create if does not exist).
+	# @param int    $2 The number of commits to move. Defaults to 1.
+	move = "!sh -c 'if [ `git rev-parse --verify --quiet "'$1'"` ]; \
+		then                                                        \
+			git checkout "'$1'";                                    \
+			git cherry-pick-last-n-from-last-branch "'${2:-1}'";     \
+			git reset-hard-other-branch @{-1} HEAD~"'${2:-1}'";      \
+		else                                                        \
+			git checkout -b "'$1'";                                 \
+			git reset-hard-other-branch @{-1} HEAD~"'${2:-1}'";      \
+		fi'";
+
 [push]
 	# push only the current branch to the remote (and create the branch
 	# on the remote if it does not already exist there)
