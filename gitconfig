@@ -10,6 +10,9 @@
 	cfixup  = commit --fixup
 	csquash = commit --squash
 
+	# Delete previous branch.
+	d- = branch -d @{-1}
+
 	# Perform reset --hard on the specified branch
 	# This allows us to remove the last n commits on a branch.
 	# @param string $1 The branch where reset --hard should be applied.

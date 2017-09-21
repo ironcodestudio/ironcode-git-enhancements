@@ -64,6 +64,9 @@ alias gds  = 'git diff --staged'
 alias gdno = 'git diff --name-only'
 alias go   = 'git checkout'
 alias gl   = "git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gd-  = "git d-"
+
+git d-     = Delete Previous branch
 
 git branch-clean = Remove both:
 	- any branches already merged into current branch
