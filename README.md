@@ -68,7 +68,7 @@ alias gds  = 'git diff --staged'
 alias gdno = 'git diff --name-only'
 alias go   = 'git checkout'
 alias gl   = 'git lg' # Mapped to custom alias
-alias gd-  = "git d-"
+alias gd-  = 'git d-' # Mapped to custom alias
 
 git lg     = Display pretty color one-line log with branches, commits, and tags.
 
