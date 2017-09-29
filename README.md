@@ -2,6 +2,10 @@ Ironcode Git Enhancements
 =========================
 https://github.com/ironcodestudio/ironcode-git-enhancements
 
+Version
+-------
+1.2.0
+
 License
 -------
 GNU General Public License, version 2.0
