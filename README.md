@@ -68,6 +68,8 @@ alias gd-  = "git d-"
 
 git d-     = Delete Previous branch
 
+git pf     = Push --force-with-lease
+
 git branch-clean = Remove both:
 	- any branches already merged into current branch
 	- any branch with a remote that has been removed from origin
@@ -156,6 +158,7 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 Changelog
 ------------
 * 20170929 - Add git move to move the most recent commit(s) to another branch (#52)
+* 20170313 - Add git pf to push using `--force-with-lease` (#10)
 * 20161226 - Set git push default to `current` (#36)
 * 20161225 - Set git push to always push tags (#24)
 * 20161225 - Add --verbose to `gc` command (#22)
