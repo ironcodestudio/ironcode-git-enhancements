@@ -159,6 +159,7 @@ Changelog
 ------------
 * 20170929 - Add git move to move the most recent commit(s) to another branch (#52)
 * 20170313 - Add git pf to push using `--force-with-lease` (#10)
+* 20170313 - Set git rebase to autosquash = true (#40)
 * 20161226 - Set git push default to `current` (#36)
 * 20161225 - Set git push to always push tags (#24)
 * 20161225 - Add --verbose to `gc` command (#22)
