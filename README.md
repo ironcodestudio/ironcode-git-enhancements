@@ -79,6 +79,10 @@ git move <branchname> [<number of commits>]
 		- if "branchname" does not exist create it
 		- "number of commits" we are moving is optional and defaults to 1
 
+git cfixup <commit> = commit --fixup <commit>
+
+git csquash <commit> = commit --squash <commit>
+
 # gpr 96, will fetch PR 96 create branch pull-request-96
 gpr () { git fetch origin pull/$1/head:pull-request-$1; }
 ```
@@ -160,6 +164,7 @@ Changelog
 * 20170929 - Add git move to move the most recent commit(s) to another branch (#52)
 * 20170313 - Add git pf to push using `--force-with-lease` (#10)
 * 20170313 - Set git rebase to autosquash = true (#40)
+* 20170313 - Add `git cfixup` and `git csquash` shortcuts for `git commit --fixup` and `git commit --squash` respectively (#41)
 * 20161226 - Set git push default to `current` (#36)
 * 20161225 - Set git push to always push tags (#24)
 * 20161225 - Add --verbose to `gc` command (#22)
