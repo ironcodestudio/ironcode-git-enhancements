@@ -163,6 +163,7 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
+* 20170929 - Add `git d-` and `gd-` to delete previous branch ([#56](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/56))
 * 20170929 - Add git move to move the most recent commit(s) to another branch ([#52](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/52))
 * 20170313 - Add git pf to push using `--force-with-lease` ([#10](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/10))
 * 20170313 - Set git rebase to autosquash = true ([#40](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/40))
