@@ -63,8 +63,10 @@ alias gd   = 'git diff'
 alias gds  = 'git diff --staged'
 alias gdno = 'git diff --name-only'
 alias go   = 'git checkout'
-alias gl   = "git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gl   = 'git lg' # Mapped to custom alias
 alias gd-  = "git d-"
+
+git lg     = Display pretty color one-line log with branches, commits, and tags.
 
 git d-     = Delete Previous branch
 
@@ -165,6 +167,7 @@ Changelog
 * 20170313 - Add git pf to push using `--force-with-lease` (#10)
 * 20170313 - Set git rebase to autosquash = true (#40)
 * 20170313 - Add `git cfixup` and `git csquash` shortcuts for `git commit --fixup` and `git commit --squash` respectively (#41)
+* 20170313 - Update documentation for `gl` and add documentation for `git lg` (#42)
 * 20161226 - Set git push default to `current` (#36)
 * 20161225 - Set git push to always push tags (#24)
 * 20161225 - Add --verbose to `gc` command (#22)

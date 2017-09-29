@@ -85,7 +85,7 @@ __git_shortcut  gdno  diff --name-only
 
 __git_shortcut  go    checkout
 
-__git_shortcut  gl    log "--color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+__git_shortcut  gl    lg # Mapped to custom alias, pretty one-line log.
 
 __git_shortcut  gd-   d- # Mapped to custom alias, delete previous branch.
 
