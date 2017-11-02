@@ -9,6 +9,7 @@
 	pf = push --force-with-lease
 	cfixup  = commit --fixup
 	csquash = commit --squash
+	track-origin-same-branch-name = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
 
 	# Delete previous branch.
 	d- = branch -d @{-1}

@@ -4,7 +4,7 @@ https://github.com/ironcodestudio/ironcode-git-enhancements
 
 Version
 -------
-1.2.0
+1.2.1
 
 License
 -------
@@ -89,6 +89,10 @@ git cfixup <commit> = commit --fixup <commit>
 
 git csquash <commit> = commit --squash <commit>
 
+
+git track-origin-same-branch-name = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+	- sets current branch tracking to origin/<name-of-current-branch>
+
 # gpr 96, will fetch PR 96 create branch pull-request-96
 gpr () { git fetch origin pull/$1/head:pull-request-$1; }
 ```
@@ -167,6 +171,7 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
+* 20171102 - Add `git track-origin-same-branch-name` to set the current branch to track `origin/<name-of-current-branch>`. This is useful when faced with the "no tracking information for the current branch" message ([#49](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/49))
 * 20170929 - Add `git d-` and `gd-` to delete previous branch ([#56](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/56))
 * 20170929 - Add git move to move the most recent commit(s) to another branch ([#52](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/52))
 * 20170313 - Add git pf to push using `--force-with-lease` ([#10](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/10))
