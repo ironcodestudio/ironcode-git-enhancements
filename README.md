@@ -93,7 +93,7 @@ git csquash <commit> = commit --squash <commit>
 git track-origin-same-branch-name = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
 	- sets current branch tracking to origin/<name-of-current-branch>
 
-git delete-merged-on-origin = !git branch --all --merged remotes/origin/master | grep --invert-match master | grep --invert-match HEAD | grep "remotes/origin/" | cut -d "/" -f 3- | xargs -n 1 git push --delete origin --dry-run
+git delete-merged-on-origin = !git branch --all --merged remotes/origin/master | grep --invert-match master | grep --invert-match HEAD | grep "remotes/origin/" | cut -d "/" -f 3- | xargs -n 1 git push --delete origin
 	- delete all branches on remote "origin" that have been merged into "origin/master"
 
 # gpr 96, will fetch PR 96 create branch pull-request-96
@@ -174,6 +174,7 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
+* 20171124 - Remove --dry-run parameter that was accidentally included with git delete-merged-on-origin
 * 20171124 - Add `git delete-merged-on-origin` to delete all branches on remote `origin` that have been merged into `origin/master` ([#62](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/62))
 * 20171102 - Add `git track-origin-same-branch-name` to set the current branch to track `origin/<name-of-current-branch>`. This is useful when faced with the "no tracking information for the current branch" message ([#49](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/49))
 * 20170929 - Add `git d-` and `gd-` to delete previous branch ([#56](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/56))
