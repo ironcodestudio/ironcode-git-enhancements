@@ -174,6 +174,7 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
+* 20180115 - Add helper aliases to make more complex aliases easier to write: FeCurrentBranchName, FePreviousBranchName, FeTrackingRemoteByLocalBranchName, FeTrackingBranchNameByLocalBranchName ([#66](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/66))
 * 20171124 - Remove --dry-run parameter that was accidentally included with git delete-merged-on-origin
 * 20171124 - Add `git delete-merged-on-origin` to delete all branches on remote `origin` that have been merged into `origin/master` ([#62](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/62))
 * 20171102 - Add `git track-origin-same-branch-name` to set the current branch to track `origin/<name-of-current-branch>`. This is useful when faced with the "no tracking information for the current branch" message ([#49](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/49))
