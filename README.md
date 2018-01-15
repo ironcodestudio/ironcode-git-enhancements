@@ -4,7 +4,7 @@ https://github.com/ironcodestudio/ironcode-git-enhancements
 
 Version
 -------
-1.2.1
+1.3.0
 
 License
 -------
