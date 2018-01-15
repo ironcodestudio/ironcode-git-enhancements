@@ -2,6 +2,21 @@
 	templatedir = ~/ironcode-git-enhancements/git_template
 
 [alias]
+	#########################
+	# BEGIN: Helper Aliases #
+	#########################
+
+	FeCurrentBranchName                   = rev-parse --abbrev-ref HEAD
+	FePreviousBranchName                  = rev-parse --symbolic-full-name --abbrev-ref @{-1}
+
+	# The first parameter ($1) is a local branch name.
+	FeTrackingRemoteByLocalBranchName     = "!f() { git "config branch.$1.remote"; }; f"
+	FeTrackingBranchNameByLocalBranchName = "!f() { git "config branch.$1.merge"; }; f"
+
+	#########################
+	# END: Helper Aliases   #
+	#########################
+
 	# Remove any branches already merged into the current branch.
 	# Removes any branches that have a remote that has been removed from origin.
 	branch-clean = !git branch --merged | grep -v '*' | xargs git branch -d && git remote prune origin
