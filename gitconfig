@@ -33,6 +33,26 @@
 	# Delete previous branch.
 	d- = branch -d @{-1}
 
+	# Delete the remote tracking branch associated with the given local branch,
+	# if no branch name is given, the current branch is used.
+	delete-remote-tracking-branch = "!f() {                                      \
+		localBranch=${1-"`git FeCurrentBranchName`"};                            \
+                                                                                 \
+		trackingRemote=`git FeTrackingRemoteByLocalBranchName $localBranch`;     \
+		if [[ -z $trackingRemote || '' == $trackingRemote ]]; then               \
+			echo "There is no tracking remote to delete.";                       \
+			exit 1;                                                              \
+		fi;                                                                      \
+                                                                                 \
+		trackingBranch=`git FeTrackingBranchNameByLocalBranchName $localBranch`; \
+		if [[ -z $trackingBranch || '' == $trackingBranch ]]; then               \
+			echo "There is no tracking branch to delete.";                       \
+			exit 1;                                                              \
+		fi;                                                                      \
+                                                                                 \
+		git push $trackingRemote --delete $trackingBranch;                       \
+	}; f"
+
 	# Perform reset --hard on the specified branch
 	# This allows us to remove the last n commits on a branch.
 	# @param string $1 The branch where reset --hard should be applied.

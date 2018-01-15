@@ -96,6 +96,10 @@ git track-origin-same-branch-name = !git branch --set-upstream-to=origin/`git sy
 git delete-merged-on-origin = !git branch --all --merged remotes/origin/master | grep --invert-match master | grep --invert-match HEAD | grep "remotes/origin/" | cut -d "/" -f 3- | xargs -n 1 git push --delete origin
 	- delete all branches on remote "origin" that have been merged into "origin/master"
 
+git delete-remote-tracking-branch <local branch> = !git push $trackingRemote --delete $trackingBranch;
+	- delete the remote tracking branch that corresponds to the given local branch
+	- <local branch> defaults to the current branch
+
 # gpr 96, will fetch PR 96 create branch pull-request-96
 gpr () { git fetch origin pull/$1/head:pull-request-$1; }
 ```
@@ -174,6 +178,7 @@ you can delete the directory and contents `~/ironcode-git-enhancements`
 
 Changelog
 ------------
+* 20180115 - Add `git delete-remote-tracking-branch <local branch>` to delete the remote tracking branch corresponding to the local branch (local branch defaults to current branch) ([#65](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/65))
 * 20180115 - Add helper aliases to make more complex aliases easier to write: FeCurrentBranchName, FePreviousBranchName, FeTrackingRemoteByLocalBranchName, FeTrackingBranchNameByLocalBranchName ([#66](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/66))
 * 20171124 - Remove --dry-run parameter that was accidentally included with git delete-merged-on-origin
 * 20171124 - Add `git delete-merged-on-origin` to delete all branches on remote `origin` that have been merged into `origin/master` ([#62](https://github.com/ironcodestudio/ironcode-git-enhancements/issues/62))
