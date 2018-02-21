@@ -13,6 +13,13 @@
 	FeTrackingRemoteByLocalBranchName     = "!f() { git "config branch.$1.remote"; }; f"
 	FeTrackingBranchNameByLocalBranchName = "!f() { git "config branch.$1.merge"; }; f"
 
+	# Delete the remote branch on origin with the given branch name,
+	# if no branch name is given, the current branch is used.
+	FeDeleteRemoteBranch = "!f() {               \
+		branch=${1-"`git FeCurrentBranchName`"}; \
+		git push origin --delete $branch;        \
+	}; f"
+
 	#########################
 	# END: Helper Aliases   #
 	#########################
@@ -32,6 +39,9 @@
 
 	# Delete previous branch.
 	d- = branch -d @{-1}
+
+	# Delete remote branch on origin. Optional param of branch to delete, defaults to current branch.
+	drb = !git FeDeleteRemoteBranch ${1}
 
 	# Delete the remote tracking branch associated with the given local branch,
 	# if no branch name is given, the current branch is used.

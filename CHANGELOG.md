@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - Add CHANGELOG.md file
+- Add alias git drb to delete a remote branch
 
 ## [1.3.0] - 2018-01-15
 ### Added

@@ -74,6 +74,9 @@ git lg     = Display pretty color one-line log with branches, commits, and tags.
 
 git d-     = Delete Previous branch
 
+git drb <branchname> = Delete branch from remote origin
+	- branchname defaults to currently active local branch name
+
 git pf     = Push --force-with-lease
 
 git branch-clean = Remove both:
