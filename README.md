@@ -60,6 +60,8 @@ Git Shortcuts
 alias gs   = 'git status'
 alias gsi  = 'git status --ignored'
 alias ga   = 'git add'
+alias agd  = 'git add'
+alias apgd = 'git add -p'
 alias gb   = 'git branch'
 alias gbv  = 'git branch -a -v' # shows both local and remote branches AND verbose
 alias gc   = 'git commit --verbose'

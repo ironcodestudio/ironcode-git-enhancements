@@ -69,6 +69,10 @@ __git_shortcut  gsi   status "--ignored --short"
 
 __git_shortcut  ga    add
 
+__git_shortcut  agd   add
+
+__git_shortcut  apgd  add -p
+
 __git_shortcut  gb    branch
 
 __git_shortcut  gbv   branch "-a -v"
