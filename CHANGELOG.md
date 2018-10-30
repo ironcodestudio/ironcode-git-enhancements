@@ -5,12 +5,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.5.0] - 2018-10-30
 ### Added
 - Add alias 'agd' for git add
 - Add alias 'apgd' for git add -p
 - Add alias 'gdsno' for git diff --staged --name-only
 - Add alias 'git please' for git push --force-with-lease
 - Add global .gitignore (core.excludesfile) to project
+
+### Changed
+- Move legacy CHANGELOG entries out of `README.md` and into `CHANGELOG.md`
 
 ## [1.4.1] - 2018-02-24
 ### Changed
