@@ -1,6 +1,9 @@
 [init]
 	templatedir = ~/ironcode-git-enhancements/git_template
 
+[core]
+	excludesfile = ~/ironcode-git-enhancements/global-gitignore
+
 [alias]
 	#########################
 	# BEGIN: Helper Aliases #

@@ -23,6 +23,7 @@ Features
 * Git shortcut names
 * Git project template
 * Prepopulate Git hooks for [Exuberant Ctags](http://ctags.sourceforge.net/)
+* Global .gitignore file / core.excludesfile (`global-gitignore`)
 
 Lazy Installation
 -----------------
