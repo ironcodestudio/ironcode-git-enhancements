@@ -29,6 +29,7 @@
 	branch-clean = !git branch --merged | grep -v '*' | xargs git branch -d && git remote prune origin
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	pf = push --force-with-lease
+	please = push --force-with-lease
 	cfixup  = commit --fixup
 	csquash = commit --squash
 	track-origin-same-branch-name = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`

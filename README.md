@@ -81,6 +81,7 @@ git drb <branchname> = Delete branch from remote origin
 	- branchname defaults to currently active local branch name
 
 git pf     = Push --force-with-lease
+git please = Push --force-with-lease
 
 git branch-clean = Remove both:
 	- any branches already merged into current branch

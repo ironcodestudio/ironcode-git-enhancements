@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add alias 'agd' for git add
 - Add alias 'apgd' for git add -p
 - Add alias 'gdsno' for git diff --staged --name-only
+- Add alias 'git please' for git push --force-with-lease
 
 ## [1.4.1] - 2018-02-24
 ### Changed
