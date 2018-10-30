@@ -87,6 +87,8 @@ __git_shortcut  gds   diff --staged
 
 __git_shortcut  gdno  diff --name-only
 
+__git_shortcut  gdsno diff "--staged --name-only"
+
 __git_shortcut  go    checkout
 
 __git_shortcut  gl    lg # Mapped to custom alias, pretty one-line log.

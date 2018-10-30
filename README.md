@@ -68,6 +68,7 @@ alias gc   = 'git commit --verbose'
 alias gd   = 'git diff'
 alias gds  = 'git diff --staged'
 alias gdno = 'git diff --name-only'
+alias gdsno = 'git diff --staged --name-only'
 alias go   = 'git checkout'
 alias gl   = 'git lg' # Mapped to custom alias
 alias gd-  = 'git d-' # Mapped to custom alias
