@@ -75,6 +75,8 @@ __git_shortcut  apgd  add -p
 
 __git_shortcut  gb    branch
 
+__git_shortcut  gbdm  branch-delete-merged
+
 __git_shortcut  gbv   branch "-a -v"
 
 __git_shortcut  gc    commit --verbose
