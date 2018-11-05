@@ -64,6 +64,7 @@ alias ga   = 'git add'
 alias agd  = 'git add'
 alias apgd = 'git add -p'
 alias gb   = 'git branch'
+alias gbdm = 'git branch-delete-merged'
 alias gbv  = 'git branch -a -v' # shows both local and remote branches AND verbose
 alias gc   = 'git commit --verbose'
 alias gd   = 'git diff'
@@ -83,6 +84,9 @@ git drb <branchname> = Delete branch from remote origin
 
 git pf     = Push --force-with-lease
 git please = Push --force-with-lease
+
+git branch-delete-merged = Delete local branches already
+	merged into current branch
 
 git branch-clean = Remove both:
 	- any branches already merged into current branch

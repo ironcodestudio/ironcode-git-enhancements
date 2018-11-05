@@ -27,6 +27,8 @@
 	# END: Helper Aliases   #
 	#########################
 
+	branch-delete-merged = !git branch --merged | grep -Ev \"(^\\*|^\\s+master$)\" | xargs git branch -d
+
 	# Remove any branches already merged into the current branch.
 	# Removes any branches that have a remote that has been removed from origin.
 	branch-clean = !git branch --merged | grep -v '*' | xargs git branch -d && git remote prune origin
