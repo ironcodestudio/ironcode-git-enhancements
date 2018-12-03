@@ -4,6 +4,9 @@
 [core]
 	excludesfile = ~/ironcode-git-enhancements/global-gitignore
 
+[interactive]
+	singleKey = true
+
 [alias]
 	#########################
 	# BEGIN: Helper Aliases #

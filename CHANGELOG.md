@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add alias `git current-branch` / `gcb` to return the current branch name
 - Add tab completion for `gl`
 - Add alias `git branch-delete-merged` / `gbdm` to delete local branches already merged into current branch
+- Add configuration value `interactive.singleKey` set to true, to allow single key answers (no need to hit Enter) when using `git add -p`
 
 ## [1.5.0] - 2018-10-30
 ### Added
