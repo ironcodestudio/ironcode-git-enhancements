@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Add tab completion for `gl`
 - Add alias `git branch-delete-merged` / `gbdm` to delete local branches already merged into current branch
+- Add git-replacement.sh script to prevent use of git push --force
+- Alias git to git-replacement.sh so our script check is used
 
 ## [1.5.0] - 2018-10-30
 ### Added
