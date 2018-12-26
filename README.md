@@ -24,6 +24,7 @@ Features
 * Git project template
 * Prepopulate Git hooks for [Exuberant Ctags](http://ctags.sourceforge.net/)
 * Global .gitignore file / core.excludesfile (`global-gitignore`)
+* Prevent use of `git push --force`
 
 Lazy Installation
 -----------------
@@ -187,3 +188,4 @@ Uninstall
 `templatedir = ~/ironcode-git-enhancements/git_template`
 * At this point, the modifications are uninstalled and optionally
 you can delete the directory and contents `~/ironcode-git-enhancements`
+* `unalias git` from our custom script
