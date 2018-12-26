@@ -103,6 +103,11 @@ __git_shortcut  gl    lg # Mapped to custom alias, pretty one-line log.
 
 __git_shortcut  gd-   d- # Mapped to custom alias, delete previous branch.
 
+# Alias 'git' to allow customizations (e.g. to prevent using push --force).
+if [ -f $IRONCODE_GIT_SCRIPTS_PATH/git-replacement.sh ]; then
+	alias git=$IRONCODE_GIT_SCRIPTS_PATH/git-replacement.sh;
+fi
+
 # gpr 96, will fetch PR 96 create branch pull-request-96
 gpr () {
 	git fetch origin pull/$1/head:pull-request-$1;
