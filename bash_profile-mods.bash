@@ -93,6 +93,12 @@ __git_shortcut  gdsno diff "--staged --name-only"
 
 __git_shortcut  go    checkout
 
+# Add tab completion for git lg, which behaves the same as tab completion for
+# git log. Tab completion for git lg works without this function, however
+# tab completion for `gl` needs this function.
+function _git_lg() {
+  _git_log
+}
 __git_shortcut  gl    lg # Mapped to custom alias, pretty one-line log.
 
 __git_shortcut  gd-   d- # Mapped to custom alias, delete previous branch.
