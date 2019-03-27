@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- Add alias `git current-branch` / `gcb` to return the current branch name
 - Add tab completion for `gl`
 - Add alias `git branch-delete-merged` / `gbdm` to delete local branches already merged into current branch
 

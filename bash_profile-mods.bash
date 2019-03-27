@@ -83,6 +83,8 @@ __git_shortcut  gc    commit --verbose
 
 __git_shortcut  gca   commit "--amend --verbose"
 
+__git_shortcut  gcb   current-branch
+
 __git_shortcut  gd    diff
 
 __git_shortcut  gds   diff --staged

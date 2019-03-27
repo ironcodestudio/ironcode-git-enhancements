@@ -67,6 +67,7 @@ alias gb   = 'git branch'
 alias gbdm = 'git branch-delete-merged'
 alias gbv  = 'git branch -a -v' # shows both local and remote branches AND verbose
 alias gc   = 'git commit --verbose'
+alias gcb  = 'git current-branch'
 alias gd   = 'git diff'
 alias gds  = 'git diff --staged'
 alias gdno = 'git diff --name-only'
@@ -91,6 +92,8 @@ git branch-delete-merged = Delete local branches already
 git branch-clean = Remove both:
 	- any branches already merged into current branch
 	- any branch with a remote that has been removed from origin
+
+git current-branch = Get the name of the current branch.
 
 git move <branchname> [<number of commits>]
 	= Move the most recent commit(s) to the branch "branchname"

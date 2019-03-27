@@ -39,6 +39,8 @@
 	csquash = commit --squash
 	track-origin-same-branch-name = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
 
+	current-branch = "!f() { git "rev-parse --abbrev-ref HEAD"; }; f"
+
 	# Delete all branches on remote `origin` that have been
 	# merged into `origin/master`
 	delete-merged-on-origin = !git branch --all --merged remotes/origin/master | grep --invert-match master | grep --invert-match HEAD | grep "remotes/origin/" | cut -d "/" -f 3- | xargs -n 1 git push --delete origin
