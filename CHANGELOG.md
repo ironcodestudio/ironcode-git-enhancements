@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 - Remove unused `--abbrev-commit` argument from git lg
 
+### Changed
+- Modify `git lg` to use Y-m-d H:M:S local time (instead of relative time)
+
 ## [1.6.0] - 2019-05-16
 ### Added
 - Add alias `git current-branch` / `gcb` to return the current branch name
