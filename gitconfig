@@ -107,6 +107,9 @@
 			fi                                                           \
 		fi'";
 
+[commit]
+	verbose = true
+
 [push]
 	# push only the current branch to the remote (and create the branch
 	# on the remote if it does not already exist there)
