@@ -67,6 +67,8 @@ __git_shortcut  gs    status "--short"
 
 __git_shortcut  gsi   status "--ignored --short"
 
+__git_shortcut  gsno  show "--name-only"
+
 __git_shortcut  ga    add
 
 __git_shortcut  agd   add

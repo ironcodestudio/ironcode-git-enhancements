@@ -60,6 +60,7 @@ Git Shortcuts
 ```
 alias gs   = 'git status'
 alias gsi  = 'git status --ignored'
+alias gsno = 'git show --name-only'
 alias ga   = 'git add'
 alias agd  = 'git add'
 alias apgd = 'git add -p'
