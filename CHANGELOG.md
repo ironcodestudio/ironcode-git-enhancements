@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 - Modify `git lg` to use Y-m-d H:M:S local time (instead of relative time)
+- Set gitconfig commit.verbose=true so all commit commands behavior as if they have the `--verbose` flag
 
 ## [1.6.0] - 2019-05-16
 ### Added
