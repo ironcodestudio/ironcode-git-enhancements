@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Fixed
 - Remove unused `--abbrev-commit` argument from git lg
+- Update git commit aliases in README.md (gc and gca)
 
 ### Changed
 - Modify `git lg` to use Y-m-d H:M:S local time (instead of relative time)
