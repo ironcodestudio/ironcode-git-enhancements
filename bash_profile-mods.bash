@@ -75,6 +75,8 @@ __git_shortcut  agd   add
 
 __git_shortcut  apgd  add -p
 
+__git_shortcut  gau   add -u
+
 __git_shortcut  gb    branch
 
 __git_shortcut  gbdm  branch-delete-merged

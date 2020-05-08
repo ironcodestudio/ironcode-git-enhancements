@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - Add alias `gsno` for git show --name-only
+- Add alias `gau` for git add -u
 
 ### Fixed
 - Remove unused `--abbrev-commit` argument from git lg
