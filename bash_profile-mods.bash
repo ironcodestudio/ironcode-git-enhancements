@@ -99,6 +99,8 @@ __git_shortcut  gdsno diff "--staged --name-only"
 
 __git_shortcut  go    checkout
 
+__git_shortcut  gcnv  commit "--no-verify"
+
 # Add tab completion for git lg, which behaves the same as tab completion for
 # git log. Tab completion for git lg works without this function, however
 # tab completion for `gl` needs this function.

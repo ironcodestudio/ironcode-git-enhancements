@@ -70,6 +70,7 @@ alias gbdm = 'git branch-delete-merged'
 alias gbv  = 'git branch -a -v' # shows both local and remote branches AND verbose
 alias gc   = 'git commit'
 alias gca  = 'git commit --amend'
+alias gcnv = 'git commit --no-verify'
 alias gcb  = 'git current-branch'
 alias gd   = 'git diff'
 alias gds  = 'git diff --staged'
