@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+### Changed
+- Update install script to no longer included bash modifications
+
+### Removed
+- Remove git-completion script
+- Remove git-prompt script
+- Remove bash shortcut aliases (e.g. gl, gc, etc.)
+
 ## [1.7.0] - 2020-05-07
 ### Added
 - Add alias `gsno` for git show --name-only
