@@ -13,14 +13,11 @@ GNU General Public License, version 2.0
 Requirements
 ------------
 * Command line git installed
-* Bash terminal environment
 * Optional: [Exuberant Ctags](http://ctags.sourceforge.net/)* for ctag generation
 
 Features
 --------
-* Git tab completion
-* Git status in command prompt
-* Git shortcut names
+* Git aliases
 * Git project template
 * Prepopulate Git hooks for [Exuberant Ctags](http://ctags.sourceforge.net/)
 * Global .gitignore file / core.excludesfile (`global-gitignore`)
@@ -43,13 +40,7 @@ Detailed Installation
 git clone https://github.com/ironcodestudio/ironcode-git-enhancements ~/ironcode-git-enhancements
 ```
 
-2. Add line to ~/.bash_profile to load our Git modifications
-
-```
-printf 'source  ~/ironcode-git-enhancements/bash_profile-mods.bash' >> ~/.bash_profile;
-```
-
-3. Add line to ~/.gitconfig to load our Git template
+2. Add line to ~/.gitconfig to load our Git template
 
 ```
 git config --global init.templatedir '~/ironcode-git-enhancements/git_template'
@@ -58,27 +49,6 @@ git config --global init.templatedir '~/ironcode-git-enhancements/git_template'
 Git Shortcuts
 -------------
 ```
-alias gs   = 'git status'
-alias gsi  = 'git status --ignored'
-alias gsno = 'git show --name-only'
-alias ga   = 'git add'
-alias gau  = 'git add -u'
-alias agd  = 'git add'
-alias apgd = 'git add -p'
-alias gb   = 'git branch'
-alias gbdm = 'git branch-delete-merged'
-alias gbv  = 'git branch -a -v' # shows both local and remote branches AND verbose
-alias gc   = 'git commit'
-alias gca  = 'git commit --amend'
-alias gcb  = 'git current-branch'
-alias gd   = 'git diff'
-alias gds  = 'git diff --staged'
-alias gdno = 'git diff --name-only'
-alias gdsno = 'git diff --staged --name-only'
-alias go   = 'git checkout'
-alias gl   = 'git lg' # Mapped to custom alias
-alias gd-  = 'git d-' # Mapped to custom alias
-
 git lg     = Display pretty color one-line log with branches, commits, and tags.
 
 git d-     = Delete Previous branch
@@ -157,8 +127,6 @@ __Warning__ This is a destructive change, you will lose any local changes on thi
 
 Included Components
 -------------------
-* bash/zsh completion support for core Git by Shawn O. Pearce <spearce@spearce.org>
-* bash/zsh git prompt support by Shawn O. Pearce <spearce@spearce.org>
 * Effortless Ctags git hooks by Tim Pope
 
 Git project template
@@ -177,18 +145,11 @@ This is based on Tim Pope's work [Effortless Ctags with Git](http://tbaggery.com
 
 Installation Notes
 ------------------
-* Installation adds `source  ~/ironcode-git-enhancements/bash_profile-mods.bash` to your .bash_profile
-* The scripts will be loaded in all future terminal sessions.
-If you want to apply them in your current terminal session can apply them now with
-the following from the command line  
-`source ~/ironcode-git-enhancements/bash_profile-mods.bash`
 * Installation modifies your `~/.gitconfig` to use the included template directory
 when initializing or cloning a repository
 
 Uninstall
 ---------
-* Edit `~/.bash_profile` in your home directory and remove the line  
-`source  ~/ironcode-git-enhancements/bash_profile-mods.bash`
 * Edit `~/gitconfig` in your home directory and remove the line  
 `templatedir = ~/ironcode-git-enhancements/git_template`
 * At this point, the modifications are uninstalled and optionally
