@@ -40,10 +40,10 @@ Detailed Installation
 git clone https://github.com/ironcodestudio/ironcode-git-enhancements ~/ironcode-git-enhancements
 ```
 
-2. Add line to ~/.gitconfig to load our Git template
+2. Add line to ~/.gitconfig to load our Git configuration
 
 ```
-git config --global init.templatedir '~/ironcode-git-enhancements/git_template'
+git config --global include.path '~/ironcode-git-enhancements/gitconfig'
 ```
 
 Git Shortcuts
