@@ -107,6 +107,8 @@
 			fi                                                           \
 		fi'";
 
+	recover-rejected-commit = "!f() { git "commit -e --file=$(git rev-parse --git-dir)/COMMIT_EDITMSG"; }; f"
+
 [commit]
 	verbose = true
 
