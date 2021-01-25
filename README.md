@@ -88,6 +88,10 @@ git delete-remote-tracking-branch <local branch> = !git push $trackingRemote --d
 	- delete the remote tracking branch that corresponds to the given local branch
 	- <local branch> defaults to the current branch
 
+# Check if a fast-forward merge is possible
+# like a dry run for git merge --ff-only <branchName>
+git can-ff-merge <branchName>
+
 # Populate a new git commit message with the contents of .git/COMMIT_EDITMSG
 # This is helpful when the git commit-msg hook fails.
 git recover-rejected-commit
