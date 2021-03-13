@@ -88,9 +88,6 @@ git delete-remote-tracking-branch <local branch> = !git push $trackingRemote --d
 	- delete the remote tracking branch that corresponds to the given local branch
 	- <local branch> defaults to the current branch
 
-# gpr 96, will fetch PR 96 create branch pull-request-96
-gpr () { git fetch origin pull/$1/head:pull-request-$1; }
-
 # Populate a new git commit message with the contents of .git/COMMIT_EDITMSG
 # This is helpful when the git commit-msg hook fails.
 git recover-rejected-commit
