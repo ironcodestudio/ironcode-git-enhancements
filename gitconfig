@@ -121,7 +121,9 @@
 		echo \"$(git ls-remote --get-url $(git config --get branch.$(git branch --show-current).remote) \
 			| sed 's|git@github.com:\\(.*\\)$|https://github.com/\\1|' \
 			| sed 's|\\.git$||'; \
-		)\"; \
+		)/compare/$(\
+		git config --get branch.$(git branch --show-current).merge | cut -d '/' -f 3- \
+		)?expand=1\"; \
 	}; f"
 
 [commit]
