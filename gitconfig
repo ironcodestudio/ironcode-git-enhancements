@@ -119,7 +119,8 @@
 
 	open-pr-github = "!f() { \
 		git ls-remote --get-url $(git config --get branch.$(git branch --show-current).remote) \
-			| sed 's|git@github.com:\\(.*\\)$|https://github.com/\\1|'; \
+			| sed 's|git@github.com:\\(.*\\)$|https://github.com/\\1|' \
+			| sed 's|\\.git$||'; \
 	}; f"
 
 [commit]
