@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+### Added
+- Add `git open-pr-github` to open the default web browser to the GitHub URL to create a Pull Request (PR) for the current branch
+
 ## [2.1.0] - 2021-03-13
 ### Added
 - Add `git recover-rejected-commit` to open the editor to create a commit and pre-populate the commit message with the contents of .git/COMMIT_EDITMSG
