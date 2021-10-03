@@ -92,6 +92,10 @@ git delete-remote-tracking-branch <local branch> = !git push $trackingRemote --d
 # like a dry run for git merge --ff-only <branchName>
 git can-ff-merge <branchName>
 
+# Open the default web browser to the GitHub URL
+# to create a Pull Request (PR) for the current branch
+git open-pr-github
+
 # Populate a new git commit message with the contents of .git/COMMIT_EDITMSG
 # This is helpful when the git commit-msg hook fails.
 git recover-rejected-commit
