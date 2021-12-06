@@ -30,6 +30,7 @@
 	branch-delete-merged = !git branch --merged | grep -Ev \"(^\\*|^\\s+master$)\" | xargs git branch -d
 
 	can-ff-merge = "!f() {                                              \
+		: git branch ; \
 		[ -e "${1}" ] && echo "Missing branch name to merge" && exit 1; \
 		git "merge-base --is-ancestor                                   \
 			$(git branch --show-current) ${1}"                          \

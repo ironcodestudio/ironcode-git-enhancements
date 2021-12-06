@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Add `git open-pr-github` to open the default web browser to the GitHub URL to create a Pull Request (PR) for the current branch
 
+### Fixed
+- Add tab completion cue to `git can-ff-merge` for branch completion option instead of file names
+
 ## [2.1.0] - 2021-03-13
 ### Added
 - Add `git recover-rejected-commit` to open the editor to create a commit and pre-populate the commit message with the contents of .git/COMMIT_EDITMSG
