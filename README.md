@@ -94,7 +94,9 @@ git can-ff-merge <branchName>
 
 # Open the default web browser to the GitHub URL
 # to create a Pull Request (PR) for the current branch
-git open-pr-github
+# into the "target" branch (or into the default
+# branch if "target" is omitted)
+git open-pr-github [<target>]
 
 # Populate a new git commit message with the contents of .git/COMMIT_EDITMSG
 # This is helpful when the git commit-msg hook fails.
