@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 ### Added
-- Add `git open-pr-github` to open the default web browser to the GitHub URL to create a Pull Request (PR) for the current branch
+- Add `git open-pr-github [target]` to open the default web browser to the GitHub URL to create a Pull Request (PR) for the current branch (into the "target" branch if given, otherwise the repo default branch is used as the target)
 
 ### Fixed
 - Add tab completion cue to `git can-ff-merge` for branch completion option instead of file names
