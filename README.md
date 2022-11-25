@@ -2,6 +2,11 @@ Ironcode Git Enhancements
 =========================
 https://github.com/ironcodestudio/ironcode-git-enhancements
 
+Archived
+--------
+
+This project has been archived in favor of [salcode/salcode-git](https://github.com/salcode/salcode-git).
+
 Version
 -------
 2.2.1
