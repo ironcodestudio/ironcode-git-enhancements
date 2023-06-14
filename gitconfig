@@ -98,6 +98,11 @@
 		git cherry-pick @{-1}~${1:-1}...@{-1}~0;   \
 	}; f"
 
+	jira = "!f() { \
+		jiraBaseUrl=\"https://$(git config --get salcode.jiraSubdomain).atlassian.net/browse/\"; \
+		open $jiraBaseUrl$(git rev-parse --abbrev-ref HEAD | sed 's/^.*\\/\\([a-zA-z]\\{1,\\}-[0-9]\\{1,\\}\\).*/\\1/'); \
+	}; f"
+
 	# Move to the given branch the last n commits.
 	# @param string $1 The destination branch (create if does not exist).
 	# @param int    $2 The number of commits to move. Defaults to 1.
